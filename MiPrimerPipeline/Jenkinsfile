@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+    stages{
+        stage('Preparar') {
+            steps {
+                echo 'Esto es un mensaje preparando entorno...'
+            }
+        }
+        stage('Ejecutar'){
+            steps {
+                echo 'Ejecutando mi primer Jenkins Pipeline'
+            }
+        }
+    }
+}
